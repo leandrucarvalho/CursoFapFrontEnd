@@ -1,0 +1,213 @@
+<!-- Conhecendo o HTML e sua estrutura básica
+1. O que é o HTML e qual é o seu papel na construção de páginas web? Descreva brevemente a
+estrutura básica de um documento HTML.
+R. HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e seu conteúdo. Por exemplo, o conteúdo pode ser estruturado em parágrafos, em uma lista com marcadores ou usando imagens e tabelas.
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Estrutura básica do HTML</title>
+  </head>
+  <body>
+    <img src="images/firefox-icon.png" alt="Estrutura básica do HTML" />
+  </body>
+</html>
+
+
+2. Como o HTML se relaciona com outras tecnologias da web, como o CSS e o JavaScript? Como essas
+três tecnologias trabalham em conjunto para criar páginas web interativas e estilizadas?
+R.HTML é a base das páginas web, pois define a estrutura e o conteúdo da página. CSS (Cascading Style Sheets) é responsável por estilizar a página, adicionando cores, fontes, tamanhos e layouts. E JavaScript é a tecnologia que adiciona interatividade à página, permitindo que os usuários interajam com o conteúdo.
+
+Identificando tags HTML básicas
+1. Cite três tags HTML básicas e explique o propósito de cada uma delas. Dê exemplos de situações em que você as usaria ao construir uma página web.
+R.<p>: Tag de parágrafo (paragraph).
+Propósito: Define um parágrafo de texto.
+Exemplo de uso: Você usa o tag <p> para definir um bloco de texto que contém informações importantes ou uma descrição curta sobre um assunto específico. Por exemplo, ao construir uma página sobre a história de uma empresa, você pode usar o tag <p> para definir uma breve descrição da empresa.
+
+<img>: Tag de imagem (image).
+Propósito: Carrega uma imagem e a adiciona à página.
+Exemplo de uso: Você usa o tag <img> quando precisa adicionar imagens à sua página, como logos, imagens de produtos ou fotos de pessoas. Por exemplo, ao construir uma página sobre um produto, você pode usar o tag <img> para carregar uma imagem do produto e adicioná-la à página.
+
+<h1>: Tag de título (heading).
+Propósito: Define um título principal ou um título de seção na página.
+Exemplo de uso: Você usa o tag <h1> quando precisa definir um título importante ou um título de seção na página, como o título da página ou o título de uma seção. Por exemplo, ao construir uma página sobre a empresa, você pode usar o tag <h1> para definir o título da página.
+
+2. Além das tags mencionadas, qual é a importância das tags de listagem, como <ul> e <ol>, no
+contexto da estruturação de conteúdo em uma página? Dê exemplos de quando você escolheria
+uma sobre a outra.
+R.<ul> (Unordered List): É usada para definir uma lista não ordenada, com itens que não precisam estar relacionados a um número específico.
+<ol> (Ordered List): É usada para definir uma lista ordenada, com itens que devem seguir um padrão de numeração.
+
+
+Você escolheria uma sobre a outra dependendo do contexto e do tipo de conteúdo:
+Use <ul> quando você precisa criar uma lista não ordenada, como uma lista de recursos ou uma lista de links relacionados.
+
+Use <ol> quando você precisa criar uma lista ordenada, como uma lista de passos para um processo ou uma lista de itemização.
+
+Exemplos de situações em que você escolheria uma sobre a outra:
+
+Se você estiver criando uma lista de recursos para uma página sobre ajuda técnica, você provavelmente usaria <ul>.
+Se você estiver criando uma lista de passos para um processo de compra online, você provavelmente usaria <ol>.
+
+
+Vinculando páginas, arquivos e âncoras
+1. Como a tag <a> é utilizada para criar links em HTML? Explique como você pode vincular para outras páginas, para arquivos locais e criar âncoras dentro de uma página.
+R.A tag <a> é usada para criar links em HTML, permitindo que os usuários naveguem entre páginas ou executam ações específicas. Aqui estão as formas principais de usar a tag <a>:
+Vincular para outras páginas: Use o atributo href para especificar a URL da página alvo.
+Exemplo: <a href="https://www.example.com">Visitar exemplo.com</a>
+Vincular para arquivos locais: Use o atributo href para especificar o caminho do arquivo local.
+Exemplo: <a href="local/arquivo.pdf">Baixar arquivo PDF</a>
+Criar âncoras dentro de uma página: Use o atributo name para criar uma âncora interna na mesma página.
+Exemplo: <a name="topo"></a> (para criar uma âncora chamada "Topo")
+
+2. Além do atributo href, quais outros atributos importantes a tag <a> pode ter? Como o atributo
+target pode ser usado para controlar como o link é aberto pelo navegador?
+R.target: Controla como o link é aberto pelo navegador. Os valores comuns são:
+_self: Abre o link na mesma janela (padrão).
+_blank: Abre o link em uma nova janela.
+_parent: Abre o link no pai da janela atual.
+_top: Abre o link na janela superior.
+
+rel: Define a relação entre a página atual e a página alvo. Exemplos: nofollow, noopener, etc.
+title: Mostra um tooltip ou uma descrição quando o usuário passa o mouse sobre o link.
+download: Define o nome do arquivo que será baixado quando o link for clicado.
+
+
+Incorporando imagens e mídias
+1. Descreva a diferença entre os atributos src e alt em relação à tag <img>. Por que é importante
+fornecer um atributo alt adequado para imagens?
+R.src: Define a URL da imagem que deve ser carregada. Isso é o caminho absoluto ou relativo para a imagem.
+Exemplo: <img src="imagem.jpg" ...>
+alt: Define uma legenda alternativa para a imagem, que é importante para acessibilidade e SEO.
+A diferença entre src e alt é que src especifica o conteúdo da imagem, enquanto alt fornece um texto descriptivo sobre a imagem. O atributo alt é importante por várias razões:
+Acessibilidade: As imagens sem legendas alternativas podem ser difíceis ou impossíveis de entender para pessoas com deficiência visual.
+SEO: As legendas alternativas ajudam os motores de busca a entender melhor o conteúdo das páginas e podem melhorar sua visibilidade nos resultados de busca.
+Análise de imagem: Se a imagem não for carregada por alguma razão, o atributo alt é usado como uma legenda alternativa para ajudar os usuários a entender o que a imagem representa.
+
+2. Além de imagens, quais outros tipos de mídia podem ser incorporados em uma página HTML?
+Como você pode garantir que a mídia incorporada seja responsiva e se ajuste bem em diferentes
+dispositivos?
+R.Vídeos: Incorporar vídeos do YouTube ou Vimeo usando a tag <iframe> ou o elemento <video>.
+
+Áudios: Incorporar áudio usando a tag <audio> e fornecer links para arquivos de áudio MP3, WAV, etc.
+
+Flash: Incorporar conteúdo Flash usando a tag <object> ou o elemento <embed>. No entanto, é importante notar que o uso de Flash está em declínio devido às melhorias na acessibilidade e performance.
+
+PDFs e documentos: Incorporar links para arquivos PDF ou outros formatos de documento usando a tag <a> e o atributo href.
+
+SVGs: Incorporar gráficos SVG (Scalable Vector Graphics) usando a tag <svg>. SVGs são altamente personalizáveis e podem ser utilizados para criar logo, ícones e gráficos.
+Para garantir que a mídia incorporada seja responsiva e se ajuste bem em diferentes dispositivos, você pode seguir algumas dicas:
+Usar media queries: Utilize media queries CSS para definir estilos específicos para telas desktop, tablets e celulares.
+
+Definir tamanhos padrão: Defina tamanhos padrão para as mídias incorporadas, como largura e altura, para que elas se ajustem bem em diferentes dispositivos.
+Usar elementos responsivos: Use elementos HTML responsivos, como <video> ou <iframe>, que são projetados para se adaptar às dimensões da tela do dispositivo.
+Testar e ajustar: Teste a página em diferentes dispositivos e ajuste os estilos e configurações de acordo necessário.
+Utilizar frameworks e bibliotecas: Utilize frameworks e bibliotecas como Bootstrap, Foundation ou Materialize para criar layouts responsivos e personalizáveis.
+
+
+Criando tabelas básicas
+1. Quais são as principais tags usadas para criar tabelas em HTML? Explique a diferença entre as tags <th> e <td>, e quando você as usaria.
+R.As principais tags usadas para criar tabelas em HTML são:
+
+table: Define o elemento da tabela.
+tr (Table Row): Define a linha de uma tabela.
+td (Table Data): Define uma célula de dados dentro de uma linha de tabela.
+th (Table Header): Define um título de coluna ou linha dentro de uma tabela.
+
+
+A principal diferença entre as tags <th> e <td> é que:
+<td>: É usada para definir células de dados normais dentro da tabela. Essas células contém informações ou conteúdo.
+<th>: É usada para definir títulos de colunas ou linhas dentro da tabela. Esse título é usado como uma legenda para a coluna ou linha.
+
+Quando você as usar?
+Use <td> quando você estiver criando células de dados normais que contém informações ou conteúdo.
+Use <th> quando você estiver criando títulos de colunas ou linhas dentro da tabela, que servem como uma legenda para a coluna ou linha.
+
+2. Embora tabelas sejam usadas para exibir dados tabulares, às vezes é recomendado evitá-las em
+favor de outras formas de apresentação de dados. Por quê? E quais são os cenários em que as
+tabelas são apropriadas?
+R.Acessibilidade: Tabelas podem ser desafiadoras para usuários com deficiência visual ou outras condições de saúde. Outras formas de apresentação de dados, como gráficos e diagramas, podem ser mais acessíveis.
+Lêibilidade: Tabelas grandes e complexas podem ser difíceis de ler e compreender. Outras formas de apresentação de dados, como gráficos e tabelas pivotadas, podem ser mais fáceis de entender.
+Narrativa: Tabelas podem não ser a melhor forma de apresentar histórias ou relatórios que envolvem dados. Outras formas de apresentação de dados, como textos e narrativas, podem ser mais eficazes.
+
+No entanto, há cenários em que as tabelas são apropriadas:
+Dados quantitativos: Tabelas são excelentes para exibir dados quantitativos, como estatísticas ou relatórios financeiros.
+Comparação de dados: Tabelas permitem fácil comparação entre diferentes linhas ou colunas, o que é útil quando você está comparando diferentes opções ou tendências.
+Dados complexos: Tabelas podem ser usadas para exibir dados complexos, como relacionamentos entre tabelas ou conjuntos de dados hierárquicos.
+
+Criando formulários
+1. Como a tag <form> é utilizada para criar formulários em HTML? Cite pelo menos três tipos
+diferentes de campos de entrada (<input>) que podem ser usados em um formulário.
+R.Texto: O tipo text permite que os usuários digam algo. Por exemplo:
+<input type="text" name="nome" placeholder="Insira seu nome">
+
+Checkboxes: O tipo checkbox permite que os usuários selecione uma opção de múltiplas escolhas. Por exemplo:
+<input type="checkbox" name="preferencias[]" value="music" checked> Music
+<input type="checkbox" name="preferencias[]" value="movies"> Movies
+
+Radio buttons: O tipo radio permite que os usuários selecione uma opção de várias escolhas, mas apenas uma pode ser selecionada. Por exemplo:
+<input type="radio" name="cor" value="vermelho"> Vermelho
+<input type="radio" name="cor" value="azul"> Azul
+<input type="radio" name="cor" value="amarelo"> Amarelo
+
+2. Além dos campos de entrada, quais outros elementos podem ser incluídos em um formulário para
+melhorar a usabilidade e a experiência do usuário?
+R.Labels: Labels são texto que se alinha ao lado ou acima de um campo de entrada, ajudando o usuário a entender o propósito do campo.
+Legendas: Legendas são texto que se alinha ao lado ou acima de um grupo de campos de entrada, fornecendo uma visão geral do que é necessário para preencher o formulário.
+Botões: Botões são elementos que permitem ao usuário enviar ou cancelar a submissão do formulário
+Feedback: Feedback é o texto ou o conteúdo que se apresenta após a submissão do formulário, fornecendo uma resposta ao usuário sobre se o formulário foi enviado com sucesso ou não.
+** Erros de validação**: Elementos que indicam erros de validação são texto ou conteúdo que se apresenta quando o formulário é enviado com dados inválidos.
+Acessibilidade: Elementos acessíveis ajudam os usuários com deficiência visual ou outras condições de saúde a navegar pelo formulário e enviar os dados corretamente.
+
+Técnicas avançadas de estruturação com elementos HTML5 semânticos
+1. O que são elementos HTML5 semânticos e por que são importantes na estruturação de uma
+página? Cite três exemplos de elementos semânticos e explique quando você os usaria.
+R.Os elementos HTML5 semânticos são elementos HTML5 que fornecem significado ao conteúdo da página, ajudando a browsers e desenvolvedores a entender melhor o propósito do conteúdo. Esses elementos são importantes na estruturação de uma página porque permitem uma melhor compreensão do conteúdo e permitir que os browsers sejam mais inteligentes ao renderizar a página.
+Aquí estão três exemplos de elementos semânticos HTML5:
+header: O elemento <header> é usado para definir o cabeçalho da página, incluindo informações como título, logotipo e links para outros sites ou páginas.
+  <header>
+  <h1>Meu Site</h1>
+  <nav>
+    <ul>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+Eu usaria o <header> quando criamos um site e queremos definir a seção de cabeçalho, incluindo informações importantes sobre o site.
+
+nav: O elemento <nav> é usado para definir a navegação da página, incluindo links para outras páginas ou sections dentro da mesma página.
+<nav>
+  <ul>
+    <li><a href="#">Início</a></li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+</nav>
+Eu usaria o <nav> quando criamos um site e queremos definir a seção de navegação, incluindo links para outras páginas ou sections dentro da mesma página.
+
+main: O elemento <main> é usado para definir a seção principal do conteúdo da página, que contém a maior parte do conteúdo importante.
+<main>
+  <h2>Meu Artigo</h2>
+  <p>Este é um artigo sobre o assunto X.</p>
+  <ul>
+    <li><a href="#">Sobre o autor</a></li>
+    <li><a href="#">Comentários</a></li>
+  </ul>
+</main>
+Eu usaria o <main> quando criamos um site e queremos definir a seção principal do conteúdo da página, que contém a maior parte do conteúdo importante.
+
+
+2. Além da semântica, como os elementos HTML5 podem afetar a acessibilidade das páginas web? Por
+que é fundamental considerar a acessibilidade ao escolher elementos de estruturação?
+R.
+Accessible names: Os elementos semânticos HTML5 fornecem nomes acessíveis para os conteúdos, o que ajuda os usuários com deficiência visual ou outras condições de saúde a entender melhor o conteúdo.
+Screen reader support: Os elementos semânticos HTML5 são suportados por leitores de tela, permitindo que os usuários com deficiência visual ou outras condições de saúde explorem e entendam o conteúdo da página.
+Predictive parsing: Os browsers modernos podem usar a estruturação HTML5 para prever o significado do conteúdo, o que ajuda a acessibilidade. Por exemplo, um browser pode entender que um elemento <nav> é uma seção de navegação e não apenas um grupo de elementos.
+Accessibility APIs: Os elementos semânticos HTML5 fornecem APIs (Aplicação Programática) para acessibilidade, permitindo que os desenvolvedores criem aplicativos e sites mais acessíveis.
+É fundamental considerar a acessibilidade ao escolher elementos de estruturação por várias razões:
+Legislação: A Lei de Accesibilidade para Pessoas com Deficiência (LAPDD) estabelece padrões mínimos para a acessibilidade em sites e aplicativos.
+Melhoria da experiência do usuário: A acessibilidade pode melhorar a experiência do usuário, permitindo que mais pessoas explorem e entendam o conteúdo da página.
+SEO: A acessibilidade e a estruturação HTML5 podem melhorar a SEO (Search Engine Optimization) de uma página, pois os motores de busca consideram a acessibilidade como um fator importante na avaliação do conteúdo.
+Conformidade: A conformidade à acessibilidade é fundamental para evitar problemas legais e para manter a reputação da marca -->
