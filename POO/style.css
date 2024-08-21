@@ -1,0 +1,13 @@
+h1 {
+  color: blue;
+}
+
+.titulo {
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+}
+
+#outro-titulo {
+  color: green;
+}
